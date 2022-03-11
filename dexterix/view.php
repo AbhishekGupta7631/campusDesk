@@ -5,7 +5,6 @@ require_once 'dbConfig.php';
 // Get image data from database 
 $result = $db->query("SELECT image FROM images ORDER BY id DESC"); 
 ?>
-
 <?php if($result->num_rows > 0){ ?> 
     <div class="gallery"> 
         <?php while($row = $result->fetch_assoc()){ ?> 
